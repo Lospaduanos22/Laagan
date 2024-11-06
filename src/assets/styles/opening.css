@@ -1,0 +1,78 @@
+/* Background container settings */
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Makes sure the container covers the full viewport */
+    background-image: url('/assets/images/OpeningPage_bg.png'); /* Path to the image in the public folder */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+/* Overlay content settings */
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the content */
+    color: white; /* Adjust text color */
+    text-align: center;
+    z-index: 10; /* Ensures the content is above the image */
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+/* Remove margin and padding for h1 and p */
+.overlay-content h1, .overlay-content p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2; /* Adjust line-height if needed */
+}
+
+/* Styling for the h1 element */
+.overlay-content h1 {
+    font-size: 100px;
+    font-weight: 100;
+    font-family: "Poppins", sans-serif; /* Apply Poppins font */
+}
+
+/* Styling for the p element */
+.overlay-content p {
+    color: #FFC260;
+    font-size: 200px;
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Positioning the logo in the top-left corner of the webpage */
+.logo {
+    position: fixed;  /* Fixed positioning relative to the viewport */
+    left: 30px;  /* Adjust distance from the left edge of the viewport */
+    width: 150px;  /* Adjust size of the logo */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.action-button {
+    margin-top: 30px;
+    /*Spacebetweenthetextandthebutton*/padding: 15px 30px;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    background-color: #DF6951;
+    /*Buttonbackgroundcolor*/color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  /* Button hover effect */
+  .action-button:hover {
+    background-color: #b74933; /* Darken background on hover */
+  }

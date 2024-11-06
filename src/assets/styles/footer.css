@@ -1,0 +1,79 @@
+/* footer.css */
+
+/* Custom background, padding, and text styling */
+.footer-container {
+    background-color: white; /* Equivalent to Tailwind's bg-gray-800 */
+    color: black; /* Equivalent to Tailwind's text-gray-300 */
+    padding: 2rem 0;
+    border-color: #CCCCCC;
+    border-width: 1px;
+    width: 100%; /* Make footer take full width of viewport */
+    position: relative; /* Required for any child positioning */
+}
+
+/* Centering max width */
+.footer-inner {
+    max-width: 80rem; /* Equivalent to max-w-7xl */
+    margin: 0 auto; /* Center the content */
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Grid layout for footer columns */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem; /* Reduced gap between columns */
+    align-items: center; /* Align items vertically centered */
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: auto 1fr 1fr 1fr; /* Allow logo and columns in one row */
+        gap: 0.5rem; /* Reduced gap for larger screens as well */
+    }
+}
+
+/* Footer link hover */
+.footer-link {
+    color: black;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: black;
+}
+
+/* Footer bottom text */
+.footer-bottom {
+    border-top: 1px solid #374151; /* Equivalent to border-gray-700 */
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+.letterinput {
+    color: black;
+}
+
+.subscribe {
+    background-color: #DF6951;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* Logo container */
+.logo-container {
+    text-align: left; /* Center the logo */
+}
+
+/* Logo styling */
+.logo {
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
