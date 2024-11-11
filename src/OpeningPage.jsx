@@ -8,7 +8,7 @@ const OpeningPage = () => {
 
   // Function to handle button click and navigate to the "header" page
   const handleButtonClick = () => {
-    navigate('/header');  // This will redirect to the /header route
+    navigate('/Login');  // This will redirect to the /header route
   };
 
   return (

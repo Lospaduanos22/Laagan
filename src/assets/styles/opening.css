@@ -49,8 +49,9 @@
 
 /* Positioning the logo in the top-left corner of the webpage */
 .logo {
-    position: fixed;  /* Fixed positioning relative to the viewport */
-    left: 30px;  /* Adjust distance from the left edge of the viewport */
+    position:absolute;  /* Fixed positioning relative to the viewport */
+    margin-top: -10px;
+    left: 0px;  /* Adjust distance from the left edge of the viewport */
     width: 150px;  /* Adjust size of the logo */
     height: auto;  /* Maintain aspect ratio */
 }
