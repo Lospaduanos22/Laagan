@@ -1,5 +1,12 @@
+import { useNavigate } from 'react-router-dom';  // Import useNavigate hook
 
 function Login(){
+  const navigate = useNavigate();  // Initialize the navigate function
+
+  // Function to handle button click and navigate to the "header" page
+  const handleButtonClick = () => {
+    navigate('/Register');  // This will redirect to the /header route
+  };
 
     return(
         <>
@@ -65,7 +72,7 @@ function Login(){
 
           <p className="text-center text-gray-500">
             Don’t have an Account?{" "}
-            <a href="#" className="text-orange-500 font-semibold hover:underline">
+            <a href="#" className="text-orange-500 font-semibold hover:underline"  onClick={handleButtonClick}>
               Register
             </a>
           </p>
